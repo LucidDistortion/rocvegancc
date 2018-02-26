@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Rochester Vegan Community Center</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="manifest" href="site.webmanifest">
+
+
+<link rel="stylesheet" href="css/normalize.css">
+        <!--Bootstrap CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/sliderstyles.css">
+
+    <!--Custom Styles-->
+        <link rel="stylesheet" href="css/main.css">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--Bootstrap JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--Font Awesome CDN-->
+<script src="https://use.fontawesome.com/e16bfdf81b.js"></script>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <div class="container-fluid">
+    <div class="row">
+     <div class="col-xs-0 col-sm-6 col-md-6" id="social_01">
+
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12" id="header">
+
+<img src="img/logo_01.png" id="logo" alt="Rochester Vegan Community Center" title="Rochester Vegan Community Center">
+</div>
+
+</div>
+        
+    </div>
+
+
+<nav class="navbar">
+    <div class="container-fluid navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle toggle-button" data-toggle="collapse" data-target="#navbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li class="navItem"><a class="navLink navLink-current" href="index.html">HOME</a></li>
+                <li class="navItem"><a class="navLink" href="schedule.html">SCHEDULE</a></li>
+                <li class="navItem"><a class="navLink" target="blank" href="events.php">EVENTS</a></li>
+                <li class="navItem"><a class="navLink" href="contact.php">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div id="accent1"></div>
+    <div id="accent2"></div>
+
+
+
+
+
+<div id="banner">
+
+<img id="freddie" src="img/banner_rvcc.png" alt="Freddie the Cow at Skylands Sanctuary" title="Freddie the Cow at Skylands Sanctuary">
+    
+</div>
+
+<div id="about">
+
+<h1>WELCOME TO A COMMUNITY SPACE LIKE NO OTHER!</h1>
+<p class="full">We are the first of it's kind! A community event space, classroom, workshop, and a resource center with a special interest in creating a haven for Rochester’s thriving vegan community.</p>
+    
+</div>
+
+
+<div id="slider">
+
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jssor.slider-26.7.0.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Cols: 1,
+              $Align: 0,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 2000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
+    
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:635px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" alt="loading" title="loading">
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:960px;height:635px;overflow:hidden;">
+            <div class="slidecontainer" data-p="170.00">
+                <img data-u="image" src="img/img27.jpg" alt="Sound setup at the Highland Cow Stage" title="Sound setup at the Highland Cow Stage">
+                    <button class="sliderbutton button1">
+                        <a class="btn" href="https://www.facebook.com/pg/rochestervegancommunitycenter/events/" target="blank">EVENTS!</a>
+                    </button> 
+            </div>
+            <div class="slidecontainer" data-p="170.00">
+                <img data-u="image" src="img/img03.jpg" alt="Vegans of all ages welcome" title="Vegans of all ages welcome">
+                    <button class="sliderbutton button2">
+                        <a class="btn" href="schedule.html">SCHEDULE!</a>
+                    </button> 
+            </div>
+            <div class="slidecontainer" data-p="170.00">
+                <img data-u="image" src="img/img01.jpg" alt="The Community Center" title="The Community Center">
+                    <button class="sliderbutton button3">
+                        <a class="btn" href="contact.php">CONTACT US!</a>
+                    </button> 
+            </div>
+      
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+</div>
+
+
+
+
+<div id="go-v">
+
+    <h2 class="ind_title">WANT TO GO VEGAN?</h2>
+        <p class="half">Have you heard the buzz about going vegan? We’re here to help answer all of your questions and more! Check out the <a href="https://rocvegfest.org/updates/roc-veg-guide/">Roc Vegan Guide</a> for information about local vegan options, <a href="contact.php">contact us,</a> or attend one of our <a href="https://rocvegancc.com/schedule.html">scheduled events</a> and talk to one of our insightful and passionate volunteers.</p> 
+
+        <p class="half">We're also excited to announce that coming April 14th to Rochester is a wonderful project by our friends at <a href="http://www.openthecages.org" target="blank">Open the Cages Alliance:</a> the completely free <a href=http://www.openthecages.org/vlp target="blank">Vegan Living Program!</a></p>
+
+        
+
+            
+                <p class="half">VLP is a community-building vegan mentorship program. It features a month of in-person educational events that cover the hows and whys of vegan living, including the ethical and environmental impact of veganism, nutrition, cooking, meal planning, and being vegan in a not-yet-vegan world.</p>
+
+                <p class="half">But there's no reason to wait; you can also take part in the <a href="https://www.facebook.com/groups/21daysoflove/" target="blank">21 Days of Love,</a> 3 week Vegan Challenge on Facebook. Once you join the page you'll be placed in a group of other new vegans, with a mentor where you will discuss topics about veganism, share recipes, ask questions, and gain important knowledge during your first 21 days being vegan.</p>
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                        <a href=http://www.openthecages.org/vlp target="blank"><img class="piclinkfull" src="img/vlp_logo.png" alt="Vegan Living Program" title="Vegan Living Program""></a>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                        <a href="https://www.facebook.com/groups/21daysoflove/" target="blank"><img class="piclinkfull" src="img/21_days_logo.png" alt="21 Days of Love - Vegan Challenge" title="21 Days of Love-Vegan Challenge"></a>
+                </div>
+
+        </div>
+        <p class="half">Click on the images to find out more and get started on your exciting journey to living Vegan! The animals, the planet, and your body will thank you.</p>
+</div>
+
+<hr>
+
+
+
+
+
+
+<div id="involved" class="container-fluid">
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+
+        <h2 class="ind_title">GET INVOLVED</h2>
+            <p class="half">These are just of few of our favorite organizations hitting the streets, educating people and saving animals.</p> 
+
+            <p class="half">Click on each image to check out their websites and find out how you can help.</p>
+
+        </div>
+
+
+
+
+
+
+
+    <div class="col-xs-12 col-sm-6 col-md-6">
+
+    <div id="imglinks" class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+
+            <a href="https://arroc.org" target="blank"><img class="piclinkhalf" src="img/arroc_link.png" alt="Animal Rights Rochester" title="Animal Rights Rochester"></a>
+            </div>
+
+         <div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="http://anonymousforthevoiceless.com" target="blank"><img class="piclinkhalf" src="img/av_link.png" title="Anonymous for the Voiceless" alt="Anonymous for the Voiceless"></a>
+            </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="https://rocvegfest.org" target="blank"><img class="piclinkhalf" src="img/vegfest_link.png" alt="Rochester VegFest" title="Rochester VegFest"></a>
+         </div>
+
+                 <div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="https://skylandssanctuary.org" target="blank"><img class="piclinkhalf" src="img/skylands_link.png" alt="Skylands Animal Sanctuary" title="Skylands Animal Sanctuary"></a>
+         </div>
+
+         </div>
+
+    </div>
+
+
+
+</div>
+    
+</div>
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer" class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-xs-4 col-sm-4 col-md-4" id="planterbox">  
+
+                    <img id="grass" src="img/grass.png" alt="grass" title="grass">
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-4" id="mailform">
+
+                <!-- Begin MailChimp Signup Form -->
+                
+                    <div id="mc_embed_signup">
+                        <form class="news" action="https://rocvegancc.us17.list-manage.com/subscribe/post?u=1dc0451f3db16c866ba25312c&amp;id=4245e367e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                            <div id="mc_embed_signup_scroll">
+                                <label id="news" for="mce-EMAIL">Subscribe to our mailing list</label><br>
+                                    <input id="news" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1dc0451f3db16c866ba25312c_4245e367e8" tabindex="-1" value="">
+                                            </div>
+
+                                            <div class="clear button"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe-form">
+                                            </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+       
+
+
+<!--End mc_embed_signup-->
+
+
+      
+            <div class="col-xs-6 col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4"> 
+
+                <div class="row" id="social">
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 icons">  
+                        <a class="social_link" href="https://www.facebook.com/rochestervegancommunitycenter/" target="blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 icons">   
+                        <a class="social_link" href="https://twitter.com/rocvegancc" target="blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    </div> 
+
+                    <div class="col-xs-4 col-sm-4 col-md-4 icons">  
+                        <a class="social_link" href="" target="blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </div>                 
+        
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-4" id="footershop">
+                <h3 class="shop">SHOP</h3>
+                <a href="https://www.etsy.com/shop/veganarmy269?ref=l2-shopheader-name"><img id="va_button" src="img/va_button.png" alt="Shop Vegan Army Activist Apparel" title="Shop Vegan Army Activist Apparel"></a>
+            </div>
+        </div>
+        
+    
+
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+               <ul class="foot">
+                   <li class="footeritem"><a class="copylink" href="contact.php">Contact</a></li>
+                   <li class="footeritem"><a class="copylink" href="index.html">About Us</a></li>
+                   <li class="footeritem"><a class="copylink" href="docs/privacy_policy.pdf">Privacy Policy</a></li>
+               </ul>
+
+                <p class="copyinfo">(585) 454-9490 | 14 Edmonds Street Rochester, NY 14607<br>
+                @2018 Vegan Army LLC. | Web Design by <a class="mylink" href="https://www.facebook.com/leanne.morango" target="blank"> Leanne Morango</a></p>
+            </div>
+
+        </div>
+
+</div>
+
+    </body>
+</html>

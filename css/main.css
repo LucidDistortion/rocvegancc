@@ -1,0 +1,1184 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*Fonts*/
+@font-face {
+    font-family:"Comfortaa-Regular";
+    src:url("..fonts/comfortaa_regular.ttf")
+}
+
+@font-face {
+    font-family:"Geneva";
+    src:url("..fonts/geneva.ttf")
+}
+
+@font-face {
+    font-family:"Geometria";
+    src:url("..fonts/geometria-light.otf");
+}
+
+@font-face {
+    font-family:"Fabrica";
+    src:url("..fonts/fabrica.otf");
+}
+
+@font-face {
+    font-family:"Yeah-Papa";
+    src:url("..fonts/yeah-papa.ttf");
+}
+
+
+/*Site Setup*/
+body {
+    width:100%;
+    padding:0, 0;
+    margin:0, 0;
+
+}
+
+/*  ==============================
+    Header
+    ==============================  */
+
+#header {
+    width:100%;
+    background-color:#000;
+    height:auto;
+    z-index: 1; So header will overlap footer if window is very short 
+}
+
+#logo {
+    width:60%;
+    float:right;
+    margin-top:15px;
+}
+
+/* ==============================
+    Navigation Bar 
+    ============================== */
+
+nav {
+    width:100%;
+    height:auto;
+    background-color:black;
+    margin:0, 0 !important;
+    padding:0, 0 !important;
+
+}
+
+#navbar {
+    width:100%;
+    margin-left:0px !important; /*Soooooooo important. 
+    Please dont ever delete!*/
+    
+}
+
+
+.navbar {
+    width:100%;
+    height:auto;
+    background-color:#000;
+    font-family:"Fabrica";
+    margin-bottom:-.1px;
+    text-align:center;
+    padding: 0px !important;
+
+}
+
+.navbar-container { 
+    width:100%;
+    padding: 0px !important;
+
+}
+
+.navbar-header {
+    line-height: ;
+    padding: 0px !important;
+
+}
+
+.currentPage {
+    width: 100%;
+    text-align: center;
+    color:#23d282;
+   padding: 0px !important;
+}
+
+.toggle-button {
+    color:#23d282;
+    font-size:18px;
+    margin-right:8%;  
+}
+
+.toggle-button:hover {
+    color:#23d282 !important;
+    border-color: !important;
+}
+
+
+.navbar-collapse {
+    width: 100% !important;
+    padding: 0px !important;
+
+}
+
+ul.nav {
+     display:inline-block;
+     list-style:none;
+     width:100%;
+     text-align:center;  
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 100% !important;
+    padding: 0px !important;
+}
+
+li.navItem {
+    width: 12.5% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center !important;
+}
+
+a.navLink { 
+    color: white !important;
+    white-space: nowrap !important;
+}
+
+a.navLink:hover {
+    color: #23d282 !important;
+    background-color:#000 !important;
+}
+
+a.navLink-current {
+    color:#35c2f2 !important;
+}
+
+a.navLink:visited {
+    background-color:#000 !important;
+}
+
+a.navLink:active {
+    color:white  !important;
+    background-color:#000 !important;
+}
+
+#accent1 {
+    width:100%;
+    height:5px;
+    background-color:#23d282;
+    margin:0, 0;
+    padding:0, 0;
+}
+
+#accent2 {
+    width:100%;
+    height:5px;
+    background-color:#35c2f2;
+    margin:0, 0;
+    padding:0, 0;
+}
+
+/*  ==============================
+    Banner
+    ============================== */
+
+#banner {
+    width:100%
+    height:auto;
+    margin:0, 0 !important;
+    padding:0, 0 !important;
+    margin-top:0%;
+}
+
+#freddie {
+    width:100%;
+    height:auto;
+}
+
+/*  ==============================
+    Image Slider
+    ============================== */
+
+#slider {
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+
+/*  ==============================
+    Crosspage Styles 
+    ============================== */
+
+h1 {
+    font-family:"Geometria";
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    font-size:24px;
+    color:black;
+}
+
+h2 {
+    font-family:"Geometria";
+    color:black;
+}
+
+
+
+h3 {
+    font-family:"Geometria";
+}
+
+
+hr {
+    width:94%;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top:20px;
+    margin-bottom:40px;
+    border-color:#00a2ba
+}
+
+
+p {
+    font-size:12px;
+    font-family:"Fabrica";
+}
+
+p.full {
+    width:90%;
+    height:auto;
+    margin-left:5%;
+    margin-right:5%;
+    text-align:center;
+    color:black;
+}
+
+p.half {
+    width:80%;
+    height:auto;
+    margin-left:10%;
+    margin-right:10%;
+    color:black;
+}
+
+p.indent {
+    margin-left:20%;
+}
+
+
+li.navItem {
+    width:100%;
+    font-family:"Geometria";
+    font-size:14px;
+    display:inline;
+}
+
+a:link {
+    text-decoration:none;
+    
+}
+
+
+/* ==============================
+    Index Page
+    ============================== */
+
+h2.ind_title {
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    text-align:center;
+    font-size:20px;  
+}
+
+#imglinks {
+width:100%;
+padding-top:5%;
+padding-bottom:5%;
+}
+
+.piclinkfull {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    padding-top:20px;
+    padding-bottom:10px;
+}
+
+.piclinkhalf {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+    padding-top:25px;
+    padding-bottom:15px;
+}
+
+.sliderbutton {
+    background-color:transparent;
+    border: 2px solid #23d282; /* Green */
+    text-align: center;
+    text-decoration: none;
+    padding:5px;
+    
+}
+
+.button1 {
+    position:relative;
+    left:16%;
+    top:35%;
+}
+
+.button2 {
+    position:relative;
+    left:73%;
+    top:38%;
+}
+
+.button3 {
+    position:relative;
+    left:22%;
+    top:36%;
+}
+
+.button4 {
+    position:relative;
+    left:22%;
+    top:36%;
+}
+
+a.btn {
+    color:#35c2f2;
+    font-size:16px;
+
+}
+
+
+a.btn:hover {
+    color:white;
+
+}
+
+
+
+/* ==============================
+    Schedule Page
+    ============================== */
+
+#shedule_page {
+    width:100%;
+    height:auto;
+    margin-bottom:80px;
+    margin-top:5%;
+}
+
+h2.post_title {
+    width:96%;
+    font-size:16px;
+    color:black;
+    text-align:center;
+    margin:2%;
+}
+
+p.post_full {
+    width:100%;
+    text-align:left;
+}
+
+.imgfeat {
+    width:40%;
+    margin:2%;
+    float:right;
+
+}
+
+#harvest {
+    width:90%;
+    margin:5%;
+}
+
+
+
+/* ==============================
+    Events Page
+    ============================== */
+
+#eventfield {
+    width:90%;
+    height:auto;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:5%;
+    background-color:#6ab643;
+}
+
+.eventcol_left {
+    padding:2%;
+}
+
+.eventcol_right {
+    padding:2%;
+}
+
+.eventbox {
+    background-color:white;
+    width:100%;
+    height:600px;
+}
+
+.infopad {
+    width:90%;
+    margin:5% 5%;
+}
+
+h2.eventtitle {
+width:80%;
+padding-top:5%;
+padding-bottom:2%;
+}
+
+h3.eventinfo {
+    width:80%;
+    font-size:18px;
+    color:black;
+    
+}
+
+img.cover {
+  object-fit: cover;       /* Scale the image so it covers whole area; will likely crop */
+  object-position: center; /* Center the image within the element */
+  width:250px;
+  height:200px;  
+}
+
+button.tickets {
+    background-color:#23d282;
+    width:150px;
+    height:auto;
+    padding-left:2%;
+    padding-right:2%;
+    border: none;
+    border-radius: 4px;
+}
+
+a.tickets {
+    color:white;
+}
+
+button.tickets,select {
+    display: inline-block;
+    border: 1px solid #1a9f62;
+    border-radius: 4px;
+    }
+
+#eb_logo {
+    width:100px;
+    height:auto;
+
+}
+p.eventdescrip {
+     padding-top:5%;
+}
+
+.minislider {
+    width:100%;
+    margin-right:10%;
+}
+
+/* ==============================
+    Contact Page
+    ==============================*/
+
+#contact_page {
+    width:90%;
+    height:auto;
+    margin:5%;
+}
+
+/*Location*/
+.googlemap-responsive{
+    width:95%;
+    height:400px;
+    margin:2.5%;
+    padding:0;
+
+
+}
+iframe.map {
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* ==============================
+    Contact Form
+============================== */
+
+
+input#contact[type=text] {
+    width:100%;
+    padding: 5px 8px;
+    margin: 5px 8px;
+    box-sizing:border-box;
+    font-size:12px;
+    font-family:"Fabrica";
+}
+
+input#contact[type=text], select {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea#contact {
+    width:100%;
+    height:150px;
+    box-sizing:border-box;
+    resize:none;
+    font-size:12px;
+    font-family:"Fabrica";
+
+}
+
+textarea#contact, select {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+
+input#contact[type=submit] {
+    width:60%;
+    height:30px;
+    margin-left:20%;
+    margin-right:20%;
+    background-color:#23d282;
+    color:white;
+    padding:0, 10px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    font-family:"Fabrica";
+    font-size:16px;
+    text-align:center;
+    vertical-align:center;
+}
+
+input#contact[type=submit], select {
+    display: inline-block;
+    border: 1px solid #1a9f62;
+    border-radius: 4px;
+    }
+
+p.form {
+    width:100%;
+    height:auto;
+    font-size:14px;
+    font-family:"Fabrica";
+}
+
+#about {
+    margin-bottom:5%;
+}
+
+
+
+
+/* ==============================
+    Footer
+ ============================== */
+
+#footer {
+    width:100%;
+    height:auto;
+    padding:0;
+    background-color:black;
+}
+
+#planterbox {
+    width:200px;
+    height:auto;
+}
+
+#grass {
+    width:100%;
+    margin-top:-120px;
+    margin-left:50px;
+}
+
+/* ==============================
+    Newsletter
+ ============================== */
+ #mailform {
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+ }
+ #mc_embed_signup {
+    width:100%;
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif; 
+}
+
+#mc_embed_signup_scroll {
+
+}
+
+#mc-embedded-subscribe-form {
+
+}
+
+form {
+    width:100% !important;
+    
+    text-align:center;
+    padding-top:5%;
+    padding-bottom:5% !important;
+}
+
+ label {
+    color:white;
+ }
+
+ input#news[type=email] {
+    width:70% !important;
+    padding:5px 5px;
+    border-radius:3px;
+    
+ }
+
+ div.button {
+       display:inline-block !important;
+ }
+
+ input#mc-embedded-subscribe-form[type=submit] {
+    width:100% !important;
+    background-color:#D3D3D3;
+    color:black;
+    padding:5px 5px;
+    border-radius:3px;
+
+ 
+ }
+
+
+
+#social {
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:70px !important;
+
+}
+
+/* ==============================
+    Icons
+    ============================== */
+
+.icons {
+    text-align:center;
+
+}
+i {
+    color:white;
+    
+}
+
+i.fa-facebook:hover {
+    color: #3b5998;
+}
+
+i.fa-twitter:hover {
+    color: #00aced;
+}
+
+i.fa-instagram:hover {
+     color: #d8006b;
+}
+
+/* ==============================
+    Legal
+    ============================== */
+
+ul.foot {
+    width:100%;
+    list-style:none;
+    margin-top:2%;
+    text-align:center;
+    margin-left:-1%;
+}
+
+li.footeritem {
+    width:100%;
+    display:inline;
+    text-align:center;
+    margin-left:4px;
+    margin-right:23px;
+    font-size:12px;
+}
+
+a.copylink {
+    font-family:"Fabrica";
+    text-decoration:none;
+    width:33%;
+    color:white;
+
+
+}
+
+a.copylink:hover {
+    cursor:pointer;
+    color:#23d282;
+    }
+
+p.copyinfo {
+    font-size:12px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    color:white;
+    margin:0, 20px;
+    padding:0, 0;
+
+}
+
+/* ==============================
+    Shop
+    ============================== */
+
+#footershop {
+    text-align:center;
+}
+
+h3.shop {
+    font-size:16px;
+    width:100%;
+    height:auto;
+    text-align:center;
+    color:#23d282;
+}
+
+
+a.mylink {
+    color:white;
+    text-decoration:none;
+}
+
+a.mylink:hover {
+    color:white;
+    text-decoration:none;
+    color:#23d282;
+    cursor:pointer;
+}
+
+
+@media screen and (min-width:480px) {
+
+    #logo {
+    width:40%;
+}
+
+
+h1 {
+    font-size:30px;
+}
+
+h2 {
+    font-size:24px;
+}
+
+h2.ind_title {
+    font-size:26px;  
+}
+
+h2.post_title {
+
+    font-size:26px;
+}
+
+h3 {
+     font-size:px;
+}
+
+h3.shop {
+    font-size:20px;
+    }
+
+p {
+    font-size:14px;
+}
+
+.eventbox {
+    height:750px;
+    }
+
+#social {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+
+}
+
+
+@media screen and (min-width:768px) {
+        #logo {
+    width:30%;
+}
+
+/* Ensure event columns will have even margins on all sides when they are in the 2-events-per-row configuration*/
+.eventcol_left {
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:2%;
+    padding-right:1%;
+}
+
+.eventcol_right {
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-right:2%;
+    padding-left:1%;
+}
+
+h1 {
+    padding-top:50px;
+    padding-bottom:20px;
+    font-size:38px;
+}
+
+h2 {
+    font-size:36px;
+}
+
+h2.ind_title {
+    font-size:36px;  
+}
+
+h2.post_title {
+    font-size:36px;
+}
+
+h3 {
+     font-size:px;
+}
+
+
+h3.shop {
+    font-size:24px;
+    }
+
+p {
+    font-size:18px;
+}
+
+
+
+#slider {
+    margin-top:80px;
+    margin-bottom:100px;
+}
+
+.piclink {
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    padding-top:none;
+    padding-bottom:none;
+}
+
+#social {
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
