@@ -247,8 +247,7 @@ if ($result != NULL) {
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li class="navItem"><a class="navLink" href="index.html">HOME</a></li>
-                <li class="navItem"><a class="navLink" href="schedule.html">SCHEDULE</a></li>
-                <li class="navItem"><a class="navLink" target="blank" href="events.php">EVENTS</a></li>
+                <li class="navItem"><a class="navLink" target="blank" href="https://www.facebook.com/pg/rochestervegancommunitycenter/events/?ref=page_internal">EVENTS</a></li>
                 <li class="navItem"><a class="navLink navLink-current" href="contact.php">CONTACT</a></li>
             </ul>
         </div>

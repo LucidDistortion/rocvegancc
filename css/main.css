@@ -250,7 +250,7 @@ a.navLink:hover {
 }
 
 a.navLink-current {
-    color:#35c2f2 !important;
+    color:#23d282 !important;
 }
 
 a.navLink:visited {
@@ -392,7 +392,26 @@ h2.ind_title {
     margin-left:10%;
     margin-right:10%;
     text-align:center;
-    font-size:20px;  
+    font-size:20px;
+
+
+}
+
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:50px;
+    height:0;
+    overflow:hidden;
+}
+
+
+.video-container iframe {
+    position:absolute;
+    top:0;
+    left:5%;
+    width:90%;
+    height:90%;
 }
 
 #imglinks {
@@ -491,11 +510,16 @@ p.post_full {
 .imgfeat {
     width:40%;
     margin:2%;
-    float:right;
+    float:left;
 
 }
 
-#harvest {
+img#openhouse {
+    width:90%;
+    margin:5%;
+}
+
+img#harvest {
     width:90%;
     margin:5%;
 }

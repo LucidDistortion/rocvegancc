@@ -72,7 +72,6 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li class="navItem"><a class="navLink" href="index.html">HOME</a></li>
-                <li class="navItem"><a class="navLink" href="schedule.html">SCHEDULE</a></li>
                 <li class="navItem"><a class="navLink navLink-current" href="eventfinder.php">EVENTS</a></li>
                 <li class="navItem"><a class="navLink" href="contact.php">CONTACT</a></li>
             </ul>
